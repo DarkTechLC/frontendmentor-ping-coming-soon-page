@@ -3,39 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | Ping coming soon page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <meta name="theme-color" content="#4f7df3" />
+    <title>Frontend Mentor | Ping coming soon page by Luís Clício</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <script defer src="js/main.js"></script>
   </head>
   <body>
-    We are launching soon! Subscribe and get notified Notify Me &copy; Copyright
-    Ping. All rights reserved.
+    <header class="header">
+      <h1 class="header__logo">PING<span class="header__logo__dot">.</span></h1>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
+      <h2 class="header__title">
+        We are launching <strong class="header__title__strong">soon!</strong>
+      </h2>
+
+      <h3 class="header__subtitle">Subscribe and get notified</h3>
+
+      <form class="header__form js-form">
+        <section class="header__form__input-group">
+          <input
+            type="email"
+            placeholder="Your email address..."
+            class="header__form__input js-email-input"
+          />
+
+          <em
+            class="header__form__alert header__form__alert--hidden js-invalid-email-alert"
+          >
+            Please provide a valid email address
+          </em>
+        </section>
+
+        <button
+          type="submit"
+          class="header__form__submit-button js-submit-button"
+        >
+          Notify Me
+        </button>
+      </form>
+
+      <img
+        src="/images/illustration-dashboard.png"
+        alt="Dashboard"
+        class="header__illustration"
+      />
+    </header>
+
+    <footer class="footer">
+      <nav class="footer__social-links">
+        <a href="#" class="footer__social-links__link">
+          <i class="fab fa-facebook-f footer__social-links__link_icon"></i>
+        </a>
+        <a href="#" class="footer__social-links__link">
+          <i class="fab fa-twitter footer__social-links__link_icon"></i>
+        </a>
+        <a href="#" class="footer__social-links__link">
+          <i class="fab fa-instagram footer__social-links__link_icon"></i>
+        </a>
+      </nav>
+
+      <p class="footer_copy">&copy; Copyright Ping. All rights reserved.</p>
+
+      <section class="footer__attribution">
+        <p class="footer__attribution_paragraph">
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Frontend Mentor</a
+          >.
+        </p>
+        <p class="footer__attribution_paragraph">
+          Coded by
+          <a
+            href="https://www.frontendmentor.io/profile/DarkTechLC"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Luís Clício </a
+          >.
+        </p>
+      </section>
     </footer>
   </body>
 </html>
