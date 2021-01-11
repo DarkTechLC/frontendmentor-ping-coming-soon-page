@@ -10,6 +10,10 @@
       href="./images/favicon-32x32.png"
     />
     <meta name="theme-color" content="#4f7df3" />
+    <meta
+      name="description"
+      content="Frontend Mentor Challenge: Ping coming soon page"
+    />
     <title>Frontend Mentor | Ping coming soon page by Luís Clício</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -36,11 +40,12 @@
       <h3 class="header__subtitle">Subscribe and get notified</h3>
 
       <form class="header__form js-form">
-        <section class="header__form__input-group">
+        <div class="header__form__input-group">
           <input
             type="email"
             placeholder="Your email address..."
             class="header__form__input js-email-input"
+            title=""
           />
 
           <em
@@ -48,7 +53,7 @@
           >
             Please provide a valid email address
           </em>
-        </section>
+        </div>
 
         <button
           type="submit"
@@ -67,20 +72,24 @@
 
     <footer class="footer">
       <nav class="footer__social-links">
-        <a href="#" class="footer__social-links__link">
+        <a href="#" class="footer__social-links__link" title="Facebook profile">
           <i class="fab fa-facebook-f footer__social-links__link_icon"></i>
         </a>
-        <a href="#" class="footer__social-links__link">
+        <a href="#" class="footer__social-links__link" title="Twitter profile">
           <i class="fab fa-twitter footer__social-links__link_icon"></i>
         </a>
-        <a href="#" class="footer__social-links__link">
+        <a
+          href="#"
+          class="footer__social-links__link"
+          title="Instagram profile"
+        >
           <i class="fab fa-instagram footer__social-links__link_icon"></i>
         </a>
       </nav>
 
       <p class="footer_copy">&copy; Copyright Ping. All rights reserved.</p>
 
-      <section class="footer__attribution">
+      <div class="footer__attribution">
         <p class="footer__attribution_paragraph">
           Challenge by
           <a
@@ -101,7 +110,7 @@
             Luís Clício </a
           >.
         </p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
