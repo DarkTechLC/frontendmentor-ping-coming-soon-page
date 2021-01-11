@@ -244,6 +244,11 @@ a {
     position: relative;
   }
 
+  .header__form__input {
+    border-radius: 32px;
+    height: 56px;
+  }
+
   .header__form__alert {
     margin-left: 32px;
     position: absolute;
@@ -251,6 +256,8 @@ a {
   }
 
   .header__form__submit-button {
+    border-radius: 32px;
+    height: 56px;
     margin-top: 0;
     margin-left: 16px;
     max-width: 200px;
